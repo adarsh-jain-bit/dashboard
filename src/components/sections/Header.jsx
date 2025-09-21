@@ -16,7 +16,7 @@ const DashboardHeader = ({ isDark , SetIsDark, onToggleSidebar, onToggleNotifica
       <div className="flex items-center gap-3">
        
         <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md cursor-pointer" onClick={onToggleSidebar}>
-         {!isDark ? <img src="/public/assets/Sidebar.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> : <img src="/public/assets/sidebarwhite.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> } 
+         {!isDark ? <img src="/assets/Sidebar.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> : <img src="/assets/sidebarwhite.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> } 
         </button>
 
        
@@ -68,7 +68,7 @@ const DashboardHeader = ({ isDark , SetIsDark, onToggleSidebar, onToggleNotifica
           <Bell className="h-5 w-5 text-gray-600 dark:text-gray-300 cursor-pointer"  />
         </button>
         <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md"  onClick={onToggleNotification}>
-           {!isDark ? <img src="/public/assets/Sidebar.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> : <img src="/public/assets/sidebarwhite.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> } 
+           {!isDark ? <img src="/assets/Sidebar.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> : <img src="/assets/sidebarwhite.png"  className="h-6 w-6 text-gray-600 dark:text-gray-300"  /> } 
         </button>
       </div>
     </header>

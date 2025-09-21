@@ -17,7 +17,7 @@ const WorldMapRevenue = () => {
       <div className="relative">
         {/* Simplified world map representation */}
         <div className="w-full h-30 rounded-lg flex items-center justify-center mb-4">
-         <img src="/public/assets/World Map.png" alt="" />
+         <img src="/assets/World Map.png" alt="" />
         </div>
         <div className="space-y-2">
           {locations.map((location, index) => (
