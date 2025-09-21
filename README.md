@@ -1,17 +1,58 @@
-<<<<<<< HEAD
-# dashboard
-The simple UI of the Dashboard
-=======
-# React + Vite
+# Ecommerce Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive and visually rich **React dashboard** project built with Vite, Tailwind CSS, Framer Motion, and 3D/animation libraries.  
+It features charts, maps, carousels, tooltips, and animated components for a modern user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Interactive charts using **Recharts**  
+- World map visualization with **react-simple-maps** + **d3-fetch**  
+- 3D models and scenes using **@splinetool/react-spline** and **ogl**  
+- Animated components with **Framer Motion** and **GSAP**  
+- Carousel sliders with **Embla Carousel** and **Swiper**  
+- Tooltips and UI interactions via **react-tooltip** and **Radix UI**  
+- Fully responsive design with **Tailwind CSS**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> bb1f044 (add the project in the repo)
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 19  
+- **Bundler:** Vite  
+- **Styling:** Tailwind CSS + Tailwind Merge + PostCSS  
+- **Animation:** Framer Motion, GSAP, Motion  
+- **Maps & Data:** react-simple-maps, d3-fetch  
+- **3D & Graphics:** @splinetool/react-spline, ogl, matter-js, poly-decomp  
+- **UI Components:** Radix UI, Lucide React, React Icons  
+- **Routing:** react-router-dom  
+- **Utilities:** Lodash, clsx, svg-path-commander  
+
+---
+
+## 📂 Project Structure
+src
+/components
+/ui
+/dashboard
+MapChart.jsx
+ChartPanel.jsx
+Carousel.jsx
+/pages
+Dashboard.jsx
+Orers.jsx
+App.jsx
+main.jsx
+
+## ⚙️ Setup & Installation
+
+
+
+## Install dependencies:
+npm install
+
+## Start the development server:
+npm run dev
+
+
