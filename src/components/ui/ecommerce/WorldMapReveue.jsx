@@ -1,4 +1,5 @@
 import { LineChart, Line, XAxis, YAxis, ResponsiveContainer, BarChart, Bar, PieChart, Pie, Cell } from "recharts";
+import MapChart from "./MapChart";
 
 
 const WorldMapRevenue = () => {
@@ -17,7 +18,8 @@ const WorldMapRevenue = () => {
       <div className="relative">
         {/* Simplified world map representation */}
         <div className="w-full h-30 rounded-lg flex items-center justify-center mb-4">
-         <img src="/assets/World Map.png" alt="" />
+         {/* <img src="/assets/World Map.png" alt="" /> */}
+         <MapChart/>
         </div>
         <div className="space-y-2">
           {locations.map((location, index) => (
