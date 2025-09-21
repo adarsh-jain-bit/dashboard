@@ -7,13 +7,20 @@ import {
   Search,
   User
 } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const DashboardHeader = ({ isDark , SetIsDark, onToggleSidebar, onToggleNotification }) => {
+    const location = useLocation();
+  
+
+  const path = location.pathname === "/" 
+    ? "Default" 
+    : location.pathname.replace("/", "").charAt(0).toUpperCase() + location.pathname.slice(2);
   return (
     <header className="flex sticky top-0 w-full items-center justify-between h-16 py-2 px-4 border-b bg-white dark:bg-[#1c1c1c]">
-      {/* Left Section */}
+      
       <div className="flex items-center gap-2 md:gap-3">
-        {/* Sidebar toggle */}
+       
         <button 
           className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md cursor-pointer"
           onClick={onToggleSidebar}
@@ -25,17 +32,17 @@ const DashboardHeader = ({ isDark , SetIsDark, onToggleSidebar, onToggleNotifica
           )}
         </button>
 
-        {/* Star icon (desktop only) */}
+       
         <button className="p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md cursor-pointer hidden md:flex">
           <Star className="h-5 w-5 text-gray-600 dark:text-gray-300" />
         </button>
 
-        {/* Breadcrumb / Nav Text (desktop only) */}
+        
         <nav className="hidden md:flex items-center text-sm text-gray-500 dark:text-gray-400 cursor-pointer">
           <span>Dashboards</span>
           <span className="mx-2">/</span>
           <span className="font-medium text-gray-900 dark:text-gray-100">
-            Default
+            {path}
           </span>
         </nav>
       </div>
