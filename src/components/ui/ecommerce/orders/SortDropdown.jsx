@@ -10,7 +10,7 @@ const SortDropdown = ({ showSortDropdown, setShowSortDropdown, handleSort }) => 
   ];
 
   return (
-    <div className="relative">
+    <div className="relative z-40">
       <button 
         onClick={() => setShowSortDropdown(!showSortDropdown)}
         className="p-2  rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-800  transition-colors flex items-center space-x-1"
@@ -19,7 +19,7 @@ const SortDropdown = ({ showSortDropdown, setShowSortDropdown, handleSort }) => 
         
       </button>
       {showSortDropdown && (
-        <div className="absolute right-0 mt-2 w-52  bg-gray-100 border dark:bg-neutral-900 dark:border-neutral-700 dark:text-white border-gray-200   rounded-lg shadow-lg z-10">
+        <div className="absolute right-[-5] mt-2 w-52  bg-gray-100 border dark:bg-neutral-900 dark:border-neutral-700 dark:text-white border-gray-200   rounded-lg shadow-lg z-10">
           <div className="py-2">
             {sortOptions.map((option, index) => (
               <button

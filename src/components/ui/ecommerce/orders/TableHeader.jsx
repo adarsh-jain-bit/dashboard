@@ -7,7 +7,7 @@ const TableHeader = ({ setShowAddModal, statusFilter, setStatusFilter, showFilte
   return (
     <div className="flex flex-col gap-2 mb-6">
       <h2 className="text-xl font-semibold">Order List</h2>
-      <div className="flex justify-between items-center space-x-3 bg-[#f7f9fb] p-2 mt-2 rounded-xl">
+      <div className="flex justify-between items-center space-x-3 bg-[#f7f9fb] dark:bg-neutral-800 p-2 mt-2 rounded-xl">
 <div className="flex gap-2">
           <button 
           onClick={() => setShowAddModal(true)}
