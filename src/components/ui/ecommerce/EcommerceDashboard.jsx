@@ -12,7 +12,7 @@ import TopSellingProducts from "./TopSellingProducts";
 // Main Dashboard Component
 const EcommerceDashboard = () => {
   return (
-    <div className="p-8">
+    <div className=" p-5 md:p-8">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">eCommerce</h1>
       </div>

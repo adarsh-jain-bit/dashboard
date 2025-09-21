@@ -9,7 +9,7 @@ const Card = ({ title, value, change, changeType, bgColor = "bg-blue-50", large 
   return (
     <div className={`${bgColor}  p-6 py-4 flex justify-center flex-col rounded-2xl ${large ? "col-span-2" : ""}`}>
       <h3 className="text-sm font-medium mb-2">{title}</h3>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap">
         <span className={`${large ? "text-3xl" : "text-2xl"} font-bold `}>
           {value}
         </span>

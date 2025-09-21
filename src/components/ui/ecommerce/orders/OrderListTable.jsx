@@ -174,7 +174,7 @@ const OrderListTable = () => {
   };
 
   return (
-    <div className=" p-8 rounded-lg">
+    <div className="  p-5 md:p-8 rounded-lg">
       <TableHeader 
         setShowAddModal={setShowAddModal}
         statusFilter={statusFilter}

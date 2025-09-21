@@ -9,7 +9,7 @@ const SearchInput = ({ searchTerm, setSearchTerm }) => {
         placeholder="Search"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        className="pl-10 pr-3 py-2  border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-sm w-64"
+        className="pl-10 pr-3 py-2  border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 text-sm w-40 md:w-64"
       />
     </div>
   );
