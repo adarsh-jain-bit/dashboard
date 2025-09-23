@@ -60,7 +60,7 @@ const MapChart = () => {
         </Geographies>
       </ComposableMap>
 
-      {/* Tooltip component (only one needed) */}
+      
       <Tooltip id="map-tooltip" />
     </>
   );

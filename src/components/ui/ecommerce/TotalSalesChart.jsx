@@ -21,7 +21,7 @@ const TotalSalesChart = () => {
       </h3>
       <div className="flex items-center justify-center">
         <div className="relative">
-          <div className="w-48 h-48"> {/* bigger fixed container */}
+          <div className="w-48 h-48"> 
             <ResponsiveContainer width="100%" height="100%">
               <PieChart>
                 <Pie
@@ -39,7 +39,7 @@ const TotalSalesChart = () => {
                   ))}
                 </Pie>
 
-                {/* Tooltip MUST be inside PieChart */}
+               
                 <Tooltip
                   formatter={(value, name) => [`$${value}`, name]}
                   contentStyle={{
@@ -50,7 +50,7 @@ const TotalSalesChart = () => {
                     fontSize: "15px",
                     padding: "6px 8px",
                   }}
-                    itemStyle={{ color: "#ffffff" }}   // values text
+                    itemStyle={{ color: "#ffffff" }}  
   labelStyle={{ color: "#ffffff" }}
                 />
               </PieChart>

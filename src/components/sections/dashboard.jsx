@@ -15,17 +15,17 @@ export const DashboardPage = () => {
   const sidebarRef = useRef(null);
   const notificationRef = useRef(null);
 
-  // Check if mobile screen
+  
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 1024); // lg breakpoint
+      setIsMobile(window.innerWidth < 1024); 
       
-      // Close sidebars on mobile when resizing to mobile
+      
       if (window.innerWidth < 1024) {
         setIsSidebarOpen(false);
         setIsNotificationOpen(false);
       } else {
-        // Reset to desktop behavior
+       
         setIsSidebarOpen(true);
       }
     };
@@ -43,17 +43,17 @@ export const DashboardPage = () => {
     }
   }, [isDark]);
 
-  // Handle click outside to close sidebars on mobile
+  
   useEffect(() => {
     if (!isMobile) return;
 
     const handleClickOutside = (event) => {
-      // Close sidebar if clicking outside
+     
       if (isSidebarOpen && sidebarRef.current && !sidebarRef.current.contains(event.target)) {
         setIsSidebarOpen(false);
       }
       
-      // Close notification if clicking outside
+      
       if (isNotificationOpen && notificationRef.current && !notificationRef.current.contains(event.target)) {
         setIsNotificationOpen(false);
       }
@@ -63,10 +63,10 @@ export const DashboardPage = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [isSidebarOpen, isNotificationOpen, isMobile]);
 
-  // Mobile: Ensure only one sidebar is open at a time
+  
   const handleToggleSidebar = () => {
     if (isMobile) {
-      // Close notification if open
+    
       if (isNotificationOpen) {
         setIsNotificationOpen(false);
       }
@@ -76,7 +76,7 @@ export const DashboardPage = () => {
 
   const handleToggleNotification = () => {
     if (isMobile) {
-      // Close sidebar if open
+     
       if (isSidebarOpen) {
         setIsSidebarOpen(false);
       }
@@ -88,7 +88,7 @@ export const DashboardPage = () => {
     <div className={`flex min-h-screen w-full ${isDark ? "dark" : ""} relative`}>
       <div className="flex w-full">
 
-        {/* Sidebar Animation */}
+       
         <AnimatePresence>
           {(isSidebarOpen || !isMobile) && (
             <motion.div
@@ -104,7 +104,6 @@ export const DashboardPage = () => {
           )}
         </AnimatePresence>
 
-        {/* Mobile Sidebar Backdrop */}
         {isMobile && isSidebarOpen && (
           <motion.div
             className="fixed inset-0 bg-black/40 bg-opacity-50 z-30"

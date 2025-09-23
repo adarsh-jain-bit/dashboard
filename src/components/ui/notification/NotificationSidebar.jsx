@@ -120,9 +120,9 @@ const NotificationSidebar = () => {
     <div className="w-64  bg-white dark:bg-[#1c1c1c] border-l border-gray-200 dark:border-gray-700 shadow-lg flex flex-col sticky top-0  shrink-0 border-r transition-all duration-300 ease-in-out">
     
 
-      {/* Scrollable Content */}
+
       <div className="flex-1 px-1">
-        {/* Notifications Section */}
+      
         <div className="mb-6 pt-4">
           <SectionHeader title="Notifications" />
           <div className="space-y-1">
@@ -138,7 +138,7 @@ const NotificationSidebar = () => {
           </div>
         </div>
 
-        {/* Activities Section */}
+    
         <div className="mb-6">
           <SectionHeader title="Activities" />
           <div className="space-y-1">
@@ -154,7 +154,7 @@ const NotificationSidebar = () => {
           </div>
         </div>
 
-        {/* Contacts Section */}
+     
         <div>
           <SectionHeader title="Contacts" />
           <div className="space-y-1">
